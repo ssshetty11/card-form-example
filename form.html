@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Card Details</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <div class="container"><h1>Renewal of Debit Card</h1>
+        <br>
+        <br>
+        <form action="/thank you.html">
+            <p>Please fill your details.</p>
+            <p><b>*should be filled compulsory</b></p>
+            <h3>Personal Information</h3>
+            <p>*First name: <input type="text" placeholder="--First name--" required ></p>
+            <p>*Last name: <input type="text" placeholder="--Last name--" required></p>
+            <p>*Age: <input type="number" placeholder="--Age--" required ></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <label>
+                <input type="radio" name="Male" >Male</label>
+                <label>
+                <input type="radio" name="Female" >Female</label>
+            </fieldset>
+            <p>*Address<br>
+            <textarea name="address"cols="50" rows="10" required></textarea>
+               <p>Email</p><input type="email" placeholder="abc@gmail.com">
+               <p>Pincode</p><input type="number" placeholder="xxxxxx">
+               <hr>
+    
+            <h3>Card Information</h3>   
+            <p>*Card Type</p>
+            <select name="Card type" required>
+                <option value="">--Select--</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="rupay">rupay</option>
+            </select> 
+            <p>*Card Number <input type="number" required></p>
+            <p>*cvv <input type="password" required></p>
+            <p>Other options</p>
+            <label >
+                <input type="checkbox" value="customized card" class="element">Customized card with name
+            </label><br>
+            <label >
+                <input type="checkbox" value="credit card" class="element">credit card 
+            </label><br>
+            <label >
+                <input type="checkbox" value="passbook" class="element">passbook
+            </label><br>
+            <label >
+                <input type="checkbox" value="cheque book" class="element">Cheque book
+            </label><br>
+            <label >
+                <input type="checkbox" value="UPI and netbanking" class="element">UPI and netbanking
+            </label>
+            <br><br><br>
+            <article style="text-align: center;">
+                <input type="submit" value="submit">
+            <input type="reset">
+            </article>
+        </form></div>
+        <script src="script.js"></script>
+        
+</body>
+</html>
